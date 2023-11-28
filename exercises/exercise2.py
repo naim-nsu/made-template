@@ -2,10 +2,10 @@
 import os, sys
 import sqlite3
 import urllib.request, urllib.error
-from typing import List, Dict
-
-# Third party imports
 import pandas as pd
+from typing import List, Dict
+from sqlalchemy import TEXT, Float, BIGINT
+
 
 
 # Automated data pipeline
@@ -68,8 +68,18 @@ class DataPipeline:
             conn = sqlite3.connect(self.db_config['db_name'])
             print(f"Succeed: Database created successfully")
 
+            columnTypes = {
+               'EVA_NR': BIGINT, 
+               'DS100': TEXT, 
+               'IFOPT': TEXT, 
+               'NAME': TEXT, 
+               'Verkehr': TEXT,
+               'Laenge': Float, 
+               'Breite': Float,
+               'Betreiber_Name': TEXT, 
+               'Betreiber_Nr': BIGINT}
             # insert data into the database
-            transformed_data.to_sql(self.db_config['table_name'], conn, if_exists='replace', index=False)
+            transformed_data.to_sql(self.db_config['table_name'], conn, if_exists='replace', index=False, dtype=columnTypes)
             print(f"Succeed: Data inserted into the database successfully")
             
             # close the connection
