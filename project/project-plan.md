@@ -30,12 +30,12 @@ In this project, we want to find a relationship between weather and insurance cl
             https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/regional_averages_tm_10.txt
             https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/regional_averages_tm_11.txt
             https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/regional_averages_tm_12.txt
-* Data Type: TXT
+* Data Type: CSV
 * License Type: OpenData License
 
 ### Datasource 2: Insurance claims Datasource
 * Metadata URL: https://www-genesis.destatis.de/genesis//online?operation=table&code=52411-0020&bypass=true&levelindex=0&levelid=1699387440984#abreadcrumb
-* Data URL: https://www-genesis.destatis.de/genesis/online?operation=abruftabelleBearbeiten&levelindex=1&levelid=1699387460686&auswahloperation=abruftabelleAuspraegungAuswaehlen&auswahlverzeichnis=ordnungsstruktur&auswahlziel=werteabruf&code=52411-0020&auswahltext=&nummer=6&variable=6&name=WZ08BA&werteabruf=Value+retrieval#abreadcrumb
+* Data URL: https://www-genesis.destatis.de/genesisWS/rest/2020/data/tablefile?username=MY_USERNAME&password=MY_PASSWORD&name=52411-0020&area=all&compress=false&transpose=false&startyear=2018&endyear=2022&language=en
 * Data Type: CSV
 
 

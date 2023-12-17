@@ -1,0 +1,39 @@
+{
+    "data_sources": [
+        {
+            "source_name": "DWD",
+            "source_url": "https://opendata.dwd.de",
+            "data_details": "Data source contains weather data (monthly air temperature mean) of Germany and all of its states from 1881 to 2023.",
+            "data_type": "csv",
+            "data_separator": ";",
+            "skip_rows": 1,
+            "skip_footer": 0,
+            "data_urls": [
+                "https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/regional_averages_tm_01.txt",
+                "https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/regional_averages_tm_02.txt",
+                "https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/regional_averages_tm_03.txt",
+                "https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/regional_averages_tm_04.txt",
+                "https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/regional_averages_tm_05.txt",
+                "https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/regional_averages_tm_06.txt",
+                "https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/regional_averages_tm_07.txt",
+                "https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/regional_averages_tm_08.txt",
+                "https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/regional_averages_tm_09.txt",
+                "https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/regional_averages_tm_10.txt",
+                "https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/regional_averages_tm_11.txt",
+                "https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/regional_averages_tm_12.txt"
+            ]
+        },
+        {
+            "source_name": "Genesis",
+            "source_url": "https://www-genesis.destatis.de/genesis/online?operation=sprachwechsel&language=en",
+            "data_details": "Data source contains insurance claim data (by enterprise) on various categories of Germany from 2010 to 2022.",
+            "data_type": "csv",
+            "data_separator": ";",
+            "skip_rows": 6,
+            "skip_footer": 3,
+            "data_urls": [
+                "https://www-genesis.destatis.de/genesisWS/rest/2020/data/tablefile?username={MY_USERNAME}&password={MY_PASSWORD}&name=52411-0020&area=all&compress=false&transpose=false&startyear=2010&endyear=2022&language=en"
+            ]
+        }
+    ]
+}

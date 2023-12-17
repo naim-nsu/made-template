@@ -3,3 +3,6 @@
 !/data/.gitkeep
 *.sqlite
 .vscode
+/project/data/*
+/project/config/config_var.py
+/project/test_report.ipynb
