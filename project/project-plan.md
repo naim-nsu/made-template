@@ -37,6 +37,7 @@ In this project, we want to find a relationship between weather and insurance cl
 * Metadata URL: https://www-genesis.destatis.de/genesis//online?operation=table&code=52411-0020&bypass=true&levelindex=0&levelid=1699387440984#abreadcrumb
 * Data URL: https://www-genesis.destatis.de/genesisWS/rest/2020/data/tablefile?username=MY_USERNAME&password=MY_PASSWORD&name=52411-0020&area=all&compress=false&transpose=false&startyear=2018&endyear=2022&language=en
 * Data Type: CSV
+* License Type: OpenData License
 
 
 ## Work Packages
