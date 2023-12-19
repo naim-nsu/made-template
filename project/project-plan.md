@@ -2,7 +2,7 @@
 
 ## Title
 <!-- Give your project a short title. -->
-Relationship between weather and insurance claims
+Relationship between weather and insurance claims in Germany
 
 ## Main Question
 
