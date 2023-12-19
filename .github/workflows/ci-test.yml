@@ -28,6 +28,6 @@ jobs:
 
       - name: Run tests
         run: |
-          cd ./project/
+          cd project
           chmod +x tests.sh
           sh tests.sh
