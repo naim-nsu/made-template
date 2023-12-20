@@ -1,4 +1,4 @@
-import json, sys, calendar, sqlite3, sqlalchemy
+import json, sys, calendar, sqlite3
 import pandas as pd
 from typing import Dict, Union
 from config.config_var import *
