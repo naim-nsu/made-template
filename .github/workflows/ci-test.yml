@@ -26,12 +26,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas
 
-      - name: Test env vars for python
-        run: python -c 'import os;print(os.environ)'
-        env:
-          GENESIS_USERNAME: ${{ secrets.GENESIS_USERNAME }} 
-          GENESIS_PASSWORD: ${{ secrets.GENESIS_PASSWORD }} 
-
       - name: Run tests
         run: |
           chmod +x ./project/tests.sh

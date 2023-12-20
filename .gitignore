@@ -4,6 +4,7 @@
 *.sqlite
 .vscode
 /project/data/*
+!/project/data/.gitkeep
 /project/config/config_var.py
 /project/test_report.ipynb
 *.pyc
