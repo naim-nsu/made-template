@@ -1,8 +1,7 @@
 #!/bin/bash
 
-
-# Path to the directory where you want to check for the file
-directory_path="/project/config"
+# Path to the config directory
+directory_path="./project/config"
 
 # Name of the file you're checking for
 file_to_check="config_var.py"
