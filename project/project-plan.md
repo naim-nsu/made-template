@@ -31,7 +31,7 @@ In this project, we want to find a relationship between weather and insurance cl
             https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/regional_averages_tm_11.txt
             https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/regional_averages_tm_12.txt
 * Data Type: CSV
-* License Type: OpenData License
+* License Type: OpenData License.
 
 ### Datasource 2: Insurance claims Datasource
 * Metadata URL: https://www-genesis.destatis.de/genesis//online?operation=table&code=52411-0020&bypass=true&levelindex=0&levelid=1699387440984#abreadcrumb
