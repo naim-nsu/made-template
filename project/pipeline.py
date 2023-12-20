@@ -21,6 +21,7 @@ class DataPipeline:
             
             for url in data_urls:
                 url = url.format(MY_USERNAME=GENESIS_USERNAME, MY_PASSWORD=GENESIS_PASSWORD)
+                print(url)
                 df = pd.read_csv(url, sep=sep, skiprows=skiprows, skipfooter=skipfooter, engine='python')
                 extracted_data[source["source_name"]].append(df)
                 
