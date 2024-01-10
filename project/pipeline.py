@@ -38,6 +38,9 @@ class DataPipeline:
                 
                 #removed unnamed column
                 df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
+
+                #sorting data
+                df = df.sort_values(by=['Jahr', 'Monat'])
                 
                 #rename header
                 df = df.rename(columns={"Jahr": "Year", "Monat": "Month", "Deutschland": "Germany"})
@@ -48,7 +51,7 @@ class DataPipeline:
                                             [num for num in range(1, 13)],
                                             [month for month in calendar.month_name[1:]])
                 #creating new column Date with year and month
-                df.insert(loc=2, column="Date", value=df['Month'] + "-" + df['Year'].astype(str))
+                df.insert(loc=2, column="Date", value=df['Month'] + "-" + df['Year'].astype(str))                
                 
                 transformed_data[source] = df
                 

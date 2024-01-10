@@ -26,7 +26,7 @@ class Test(unittest.TestCase):
         
         #connect db and check the rows of the table are as expected
         conn = sqlite3.connect(DB_PATH)
-        print(DB_PATH)
+        #print(DB_PATH)
         expected_row_counts = {
             'weather_data': 156,
             'insurance_claim_data': 624
