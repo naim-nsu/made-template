@@ -2,32 +2,37 @@ import json, sys, calendar, sqlite3
 import pandas as pd
 from typing import Dict, Union
 from config.config_var import *
+from main import check_config_file
 
 class DataPipeline:
-    def __init__(self, source_info_path: str) -> None:
-        self.source_info_path = source_info_path
+    def __init__(self) -> None:
+        self.source_info_path = SOURCE_INFO_PATH
         self.source_info = None
     
     def on_extract(self) ->  Dict:
-        extracted_data = dict()
-        for source in self.source_info["data_sources"]:
-            if source["source_name"] not in extracted_data:
-                extracted_data[source["source_name"]] = list()
+        try:
+            extracted_data = dict()
+            for source in self.source_info["data_sources"]:
+                if source["source_name"] not in extracted_data:
+                    extracted_data[source["source_name"]] = list()
+                    
+                data_urls = source["data_urls"]
+                sep=source["data_separator"]
+                skiprows=source["skip_rows"] 
+                skipfooter=source["skip_footer"]
                 
-            data_urls = source["data_urls"]
-            sep=source["data_separator"]
-            skiprows=source["skip_rows"] 
-            skipfooter=source["skip_footer"]
-            
-            for url in data_urls:
-                url = url.format(MY_USERNAME=GENESIS_USERNAME, MY_PASSWORD=GENESIS_PASSWORD)
-                df = pd.read_csv(url, sep=sep, skiprows=skiprows, skipfooter=skipfooter, engine='python')
-                extracted_data[source["source_name"]].append(df)
-                print(f"Succeed: Data from URL: {url} extracted successfully")
-                
-            print(f"Succeed: Data from {source['source_name'] } data source extracted successfully")
-        return extracted_data
-    
+                for url in data_urls:
+                    url = url.format(MY_USERNAME=GENESIS_USERNAME, MY_PASSWORD=GENESIS_PASSWORD)
+                    df = pd.read_csv(url, sep=sep, skiprows=skiprows, skipfooter=skipfooter, engine='python')
+                    extracted_data[source["source_name"]].append(df)
+                    print(f"Succeed: Data from URL: {url} extracted successfully")
+                    
+                print(f"Succeed: Data from {source['source_name'] } data source extracted successfully")
+            return extracted_data
+        except:
+            print(f'''Error: Data extraction failed from URL: {url},/
+                  Please check if the genesis username and password are correctly inserted in config_var file.''')
+            exit(1)
 
     def on_transform(self, extracted_data: Dict) -> pd.DataFrame:
         transformed_data = dict()
@@ -129,5 +134,6 @@ class DataPipeline:
         self.on_load(transformed_data)
 
 if __name__ == "__main__":
-    data_pipeline = DataPipeline(SOURCE_INFO_PATH)
+    check_config_file()
+    data_pipeline = DataPipeline()
     data_pipeline.run_pipeline()

@@ -2,7 +2,7 @@ import unittest
 import sqlite3
 import pandas as pd
 
-from config.config_var import *
+from project.config.config_var import *
 from pipeline import DataPipeline
 
 class Test(unittest.TestCase):
@@ -18,7 +18,7 @@ class Test(unittest.TestCase):
         self.assertTrue(os.path.exists(SOURCE_INFO_PATH))
         
         #run the data pipeline
-        data_pipeline = DataPipeline(SOURCE_INFO_PATH)
+        data_pipeline = DataPipeline()
         data_pipeline.run_pipeline()
         
         #check if the data pipeline created the db
