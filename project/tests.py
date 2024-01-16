@@ -2,7 +2,7 @@ import unittest
 import sqlite3
 import pandas as pd
 
-from project.config.config_var import *
+from config.config_var import *
 from pipeline import DataPipeline
 
 class Test(unittest.TestCase):
