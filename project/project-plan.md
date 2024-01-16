@@ -58,18 +58,18 @@ In this study, two open-source datasets have been utilized. The first dataset is
 project/
 ├── config/
 │   ├── __init__.py
-│   ├── config_var.py                   #  Main configuration file
-│   ├── config_var.example.py		    # Dummy configuration file to duplicate
-│   └── source_info.json				# Data sources file
+│   ├── config_var.py			#  Main configuration file
+│   ├── config_var.example.py		# Dummy configuration file to duplicate
+│   └── source_info.json		# Data sources file
 ├── data/
 │   ├── fau_made_project_ws23.sqlite	# Sqlite Database
-├── main.py							    # Main entry point to run the pipeline
-├── pipeline.py							# Data Pipeline
-├── pipeline.sh							# Bash script of running pipeline
-├── project-plan.md						# Project Plan
-├── report.ipynb						# Notebook of final project report
-├── tests.py							# Unit testing file
-└── tests.sh							# Bash script for running tests
+├── main.py				# Main entry point to run the pipeline
+├── pipeline.py				# Data Pipeline
+├── pipeline.sh				# Bash script of running pipeline
+├── project-plan.md			# Project Plan
+├── report.ipynb			# Notebook of final project report
+├── tests.py				# Unit testing file
+└── tests.sh				# Bash script for running tests
 ```
 
 **Important files of the project and their roles:**
