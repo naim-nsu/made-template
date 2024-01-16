@@ -58,7 +58,7 @@ In this study, two open-source datasets have been utilized. The first dataset is
 project/
 ├── config/
 │   ├── __init__.py
-│   ├── config_var.py			#  Main configuration file
+│   ├── config_var.py			# Main configuration file
 │   ├── config_var.example.py		# Dummy configuration file to duplicate
 │   └── source_info.json		# Data sources file
 ├── data/
