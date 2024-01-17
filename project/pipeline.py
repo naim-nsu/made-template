@@ -29,6 +29,7 @@ class DataPipeline:
                     
                 print(f"Succeed: Data from {source['source_name'] } data source extracted successfully")
             return extracted_data
+        
         except:
             print(f'''Error: Data extraction failed from URL: {url},/
                   Please check if the genesis username and password are correctly inserted in config_var file.''')
