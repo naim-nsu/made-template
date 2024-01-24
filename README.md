@@ -26,8 +26,8 @@ project/
 ├── pipeline.sh				# Bash script of running pipeline
 ├── project-plan.md			# Project Plan
 ├── report.ipynb			# Notebook of final project report
-├── slides.pdf              # Powerpoint slides of project
-├── presentation-video.md   # Presentation video of project
+├── slides.pdf                          # Powerpoint slides of project
+├── presentation-video.md               # Presentation video of project
 ├── tests.py				# Unit testing file
 └── tests.sh				# Bash script for running tests
 ```
