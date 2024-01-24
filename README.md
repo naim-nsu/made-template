@@ -1,5 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ![CI workflow](https://github.com/naim-nsu/made-template/actions/workflows/ci-test.yml/badge.svg)
+![Exercise](https://github.com/naim-nsu/made-template/actions/workflows/exercise-feedback.yml/badge.svg)
 
 # Analyzing the Impact of Weather Conditions on Insurance Claims in Germany
 
