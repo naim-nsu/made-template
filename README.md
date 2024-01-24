@@ -1,6 +1,14 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![CI workflow](https://github.com/naim-nsu/made-template/actions/workflows/ci-test.yml/badge.svg)
+
 # Analyzing the Impact of Weather Conditions on Insurance Claims in Germany
 
-This project examines how **weather conditions in Germany affect insurance claims**, using two open-source datasets. The first dataset is from the German Weather Service (Deutscher Wetterdienst - [DWD](https://opendata.dwd.de/)), providing comprehensive weather data for Germany and its states. The second dataset is from [GENESIS](https://www-genesis.destatis.de/genesis/online/data?operation=sprachwechsel&language=en), offering detailed information on insurance claims in various categories across Germany. Refer to the [project plan](/project/project-plan.md) for more details.
+This project examines how **weather conditions in Germany affect insurance claims**, using two open-source datasets. The first dataset is from the German Weather Service (Deutscher Wetterdienst - [DWD](https://opendata.dwd.de/)), providing comprehensive weather data for Germany and its states. The second dataset is from [GENESIS](https://www-genesis.destatis.de/genesis/online/data?operation=sprachwechsel&language=en), offering detailed information on insurance claims in various categories across Germany. Here are the important files associated with this project:
+
+- [project plan](/project/project-plan.md) - Overview of the project
+- [project report](/project/report.ipynb) - Notebook of the final project report
+- [project slides](/project/slides.pdf) - Powerpoint slides of project
+- [project video](/project/presentation-video.md) - Presentation video of project
 
 ## Project Structure
 
@@ -18,6 +26,8 @@ project/
 ├── pipeline.sh				# Bash script of running pipeline
 ├── project-plan.md			# Project Plan
 ├── report.ipynb			# Notebook of final project report
+├── slides.pdf              # Powerpoint slides of project
+├── presentation-video.md   # Presentation video of project
 ├── tests.py				# Unit testing file
 └── tests.sh				# Bash script for running tests
 ```
